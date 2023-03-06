@@ -26,6 +26,7 @@ end)
 vim.cmd('highlight TelescopeNormal guibg=#1d1d1d')
 vim.cmd('highlight TelescopeNormalFloat guibg=#1d1d1d')
 vim.cmd('highlight TelescopeBorder guibg=#1d1d1d')
+vim.cmd('highlight TelescopeSelection guibg=#202020')
 vim.cmd('highlight Normal guibg=#1d1d1d')
 vim.cmd('highlight NormalFloat guibg=#1d1d1d')
 --
