@@ -8,28 +8,57 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- Colorscheme
-  use 'cocopon/iceberg.vim'
-  use 'vv9k/vim-github-dark'
-  use 'tomasiser/vim-code-dark'
-  use 'nanotech/jellybeans.vim'
-  use 'folke/tokyonight.nvim'
-  use 'doums/darcula'
-  use 'gruvbox-community/gruvbox'
-  use 'scottymoon/vim-twilight'
-  use 'AlessandroYorba/Alduin'
-  use 'w0ng/vim-hybrid'
-  use 'kristijanhusak/vim-hybrid-material'
-  use 'kaicataldo/material.vim'
-  use 'chriskempson/base16-vim'
-  use 'jeffkreeftmeijer/vim-dim'
-
   use({
-    'rose-pine/neovim',
-    as = 'rose-pine',
+    'folke/tokyonight.nvim',
     config = function()
-      require("rose-pine").setup({
+      vim.cmd('colorscheme tokyonight')
+
+      require("tokyonight").setup({
+        -- use the night style
+       -- style = "night",
+        -- disable italic for functions
+        -- styles = {
+        --   functions = {}
+        -- },
+        -- sidebars = { "qf", "vista_kind", "terminal", "packer" },
+        -- change the background color to match terminal
+        on_colors = function(colors)
+          colors.bg = "#1d1d1d"
+          colors.bg_dark = "#1d1d1d"
+        end,
+
+        -- make Telescope borderless
+        --  on_highlights = function(hl, c)
+        --   local prompt = "#1d1d1d"
+        --   hl.TelescopeNormal = {
+        --     bg = c.bg_dark,
+        --     fg = c.fg_dark,
+        --   }
+        --   hl.TelescopeBorder = {
+        --     bg = c.bg_dark,
+        --     fg = c.bg_dark,
+        --   }
+        --   hl.TelescopePromptNormal = {
+        --     bg = prompt,
+        --   }
+        --   hl.TelescopePromptBorder = {
+        --     bg = prompt,
+        --     fg = prompt,
+        --   }
+        --   hl.TelescopePromptTitle = {
+        --     bg = prompt,
+        --     fg = prompt,
+        --   }
+        --   hl.TelescopePreviewTitle = {
+        --     bg = c.bg_dark,
+        --     fg = c.bg_dark,
+        --   }
+        --   hl.TelescopeResultsTitle = {
+        --     bg = c.bg_dark,
+        --     fg = c.bg_dark,
+        --   }
+        -- end
       })
-      -- vim.cmd('colorscheme rose-pine')
     end
   })
 

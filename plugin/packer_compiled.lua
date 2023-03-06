@@ -74,20 +74,10 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  Alduin = {
-    loaded = true,
-    path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/Alduin",
-    url = "https://github.com/AlessandroYorba/Alduin"
-  },
   LuaSnip = {
     loaded = true,
     path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
-  },
-  ["base16-vim"] = {
-    loaded = true,
-    path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/base16-vim",
-    url = "https://github.com/chriskempson/base16-vim"
   },
   ["cmp-buffer"] = {
     loaded = true,
@@ -119,35 +109,15 @@ _G.packer_plugins = {
     path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
-  darcula = {
-    loaded = true,
-    path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/darcula",
-    url = "https://github.com/doums/darcula"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
-  gruvbox = {
-    loaded = true,
-    path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/gruvbox",
-    url = "https://github.com/gruvbox-community/gruvbox"
-  },
   harpoon = {
     loaded = true,
     path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
-  },
-  ["iceberg.vim"] = {
-    loaded = true,
-    path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/iceberg.vim",
-    url = "https://github.com/cocopon/iceberg.vim"
-  },
-  ["jellybeans.vim"] = {
-    loaded = true,
-    path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/jellybeans.vim",
-    url = "https://github.com/nanotech/jellybeans.vim"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
@@ -163,11 +133,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
-  },
-  ["material.vim"] = {
-    loaded = true,
-    path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/material.vim",
-    url = "https://github.com/kaicataldo/material.vim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -199,12 +164,6 @@ _G.packer_plugins = {
     path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["rose-pine"] = {
-    config = { "\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14rose-pine\frequire\0" },
-    loaded = true,
-    path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/rose-pine",
-    url = "https://github.com/rose-pine/neovim"
-  },
   tComment = {
     loaded = true,
     path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/tComment",
@@ -216,6 +175,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["tokyonight.nvim"] = {
+    config = { "\27LJ\2\n.\0\1\2\0\3\0\5'\1\1\0=\1\0\0'\1\1\0=\1\2\0K\0\1\0\fbg_dark\f#1d1d1d\abgÅ\1\1\0\4\0\t\0\r6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\3\0'\2\4\0B\0\2\0029\0\5\0005\2\a\0003\3\6\0=\3\b\2B\0\2\1K\0\1\0\14on_colors\1\0\0\0\nsetup\15tokyonight\frequire\27colorscheme tokyonight\bcmd\bvim\0" },
     loaded = true,
     path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
@@ -229,16 +189,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/vim-bundler",
     url = "https://github.com/tpope/vim-bundler"
-  },
-  ["vim-code-dark"] = {
-    loaded = true,
-    path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/vim-code-dark",
-    url = "https://github.com/tomasiser/vim-code-dark"
-  },
-  ["vim-dim"] = {
-    loaded = true,
-    path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/vim-dim",
-    url = "https://github.com/jeffkreeftmeijer/vim-dim"
   },
   ["vim-endwise"] = {
     loaded = true,
@@ -254,21 +204,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
-  },
-  ["vim-github-dark"] = {
-    loaded = true,
-    path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/vim-github-dark",
-    url = "https://github.com/vv9k/vim-github-dark"
-  },
-  ["vim-hybrid"] = {
-    loaded = true,
-    path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/vim-hybrid",
-    url = "https://github.com/w0ng/vim-hybrid"
-  },
-  ["vim-hybrid-material"] = {
-    loaded = true,
-    path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/vim-hybrid-material",
-    url = "https://github.com/kristijanhusak/vim-hybrid-material"
   },
   ["vim-javascript"] = {
     loaded = true,
@@ -345,11 +280,6 @@ _G.packer_plugins = {
     path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/vim-tmux-runner",
     url = "https://github.com/christoomey/vim-tmux-runner"
   },
-  ["vim-twilight"] = {
-    loaded = true,
-    path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/vim-twilight",
-    url = "https://github.com/scottymoon/vim-twilight"
-  },
   ["zen-mode.nvim"] = {
     config = { "\27LJ\2\n:\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\rzen-mode\frequire\0" },
     loaded = true,
@@ -359,10 +289,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: rose-pine
-time([[Config for rose-pine]], true)
-try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14rose-pine\frequire\0", "config", "rose-pine")
-time([[Config for rose-pine]], false)
+-- Config for: tokyonight.nvim
+time([[Config for tokyonight.nvim]], true)
+try_loadstring("\27LJ\2\n.\0\1\2\0\3\0\5'\1\1\0=\1\0\0'\1\1\0=\1\2\0K\0\1\0\fbg_dark\f#1d1d1d\abgÅ\1\1\0\4\0\t\0\r6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\3\0'\2\4\0B\0\2\0029\0\5\0005\2\a\0003\3\6\0=\3\b\2B\0\2\1K\0\1\0\14on_colors\1\0\0\0\nsetup\15tokyonight\frequire\27colorscheme tokyonight\bcmd\bvim\0", "config", "tokyonight.nvim")
+time([[Config for tokyonight.nvim]], false)
 -- Config for: zen-mode.nvim
 time([[Config for zen-mode.nvim]], true)
 try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\rzen-mode\frequire\0", "config", "zen-mode.nvim")
