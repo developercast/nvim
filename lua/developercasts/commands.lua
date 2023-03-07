@@ -6,33 +6,38 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
 
 -- color related overrides
 vim.api.nvim_command([[
-    augroup ChangeBackgroudColour
-        autocmd colorscheme * :hi normal guibg=black
+    augroup ChangeNormalColour
+        autocmd colorscheme * :hi Normal guibg=none ctermbg=none
+    augroup END
+]])
+vim.api.nvim_command([[
+    augroup ChangeNormalFloatColour
+        autocmd colorscheme * :hi NormalFloat guibg=none ctermbg=none
     augroup END
 ]])
 vim.api.nvim_command([[
     augroup ChangeTabLineColour
-        autocmd colorscheme * :hi TabLine guibg=#1d1d1d guifg=#3b4261
+        autocmd colorscheme * :hi TabLine guibg=#1d1d1d guifg=#605958
     augroup END
 ]])
 vim.api.nvim_command([[
     augroup ChangeTabLineFillColour
-        autocmd colorscheme * :hi TabLineFill guibg=#1d1d1d guifg=#3b4261
+        autocmd colorscheme * :hi TabLineFill guibg=#1d1d1d guifg=#605958
     augroup END
 ]])
 vim.api.nvim_command([[
     augroup ChangeTabLineSelColour
-        autocmd colorscheme * :hi TabLineSel guibg=none guifg=#7aa2f7
+        autocmd colorscheme * :hi TabLineSel guibg=none guifg=white
     augroup END
 ]])
 vim.api.nvim_command([[
     augroup ChangeStatusLineColour
-        autocmd colorscheme * :hi StatusLine guibg=none guifg=#737aa2
+        autocmd colorscheme * :hi StatusLine guibg=none guifg=white
     augroup END
 ]])
 vim.api.nvim_command([[
     augroup ChangeStatusLineNCColour
-        autocmd colorscheme * :hi StatusLineNC guibg=none guifg=#3b4261
+        autocmd colorscheme * :hi StatusLineNC guibg=none guifg=#605958
     augroup END
 ]])
 vim.api.nvim_command([[

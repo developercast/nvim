@@ -174,12 +174,6 @@ _G.packer_plugins = {
     path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["tokyonight.nvim"] = {
-    config = { "\27LJ\2\n.\0\1\2\0\3\0\5'\1\1\0=\1\0\0'\1\1\0=\1\2\0K\0\1\0\fbg_dark\f#1d1d1d\abgÅ\1\1\0\4\0\t\0\r6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\3\0'\2\4\0B\0\2\0029\0\5\0005\2\a\0003\3\6\0=\3\b\2B\0\2\1K\0\1\0\14on_colors\1\0\0\0\nsetup\15tokyonight\frequire\27colorscheme tokyonight\bcmd\bvim\0" },
-    loaded = true,
-    path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
-  },
   undotree = {
     loaded = true,
     path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/undotree",
@@ -189,6 +183,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/vim-bundler",
     url = "https://github.com/tpope/vim-bundler"
+  },
+  ["vim-code-dark"] = {
+    config = { "\27LJ\2\n8\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\25colorscheme codedark\bcmd\bvim\0" },
+    loaded = true,
+    path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/vim-code-dark",
+    url = "https://github.com/tomasiser/vim-code-dark"
   },
   ["vim-endwise"] = {
     loaded = true,
@@ -289,14 +289,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: tokyonight.nvim
-time([[Config for tokyonight.nvim]], true)
-try_loadstring("\27LJ\2\n.\0\1\2\0\3\0\5'\1\1\0=\1\0\0'\1\1\0=\1\2\0K\0\1\0\fbg_dark\f#1d1d1d\abgÅ\1\1\0\4\0\t\0\r6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\3\0'\2\4\0B\0\2\0029\0\5\0005\2\a\0003\3\6\0=\3\b\2B\0\2\1K\0\1\0\14on_colors\1\0\0\0\nsetup\15tokyonight\frequire\27colorscheme tokyonight\bcmd\bvim\0", "config", "tokyonight.nvim")
-time([[Config for tokyonight.nvim]], false)
 -- Config for: zen-mode.nvim
 time([[Config for zen-mode.nvim]], true)
 try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\rzen-mode\frequire\0", "config", "zen-mode.nvim")
 time([[Config for zen-mode.nvim]], false)
+-- Config for: vim-code-dark
+time([[Config for vim-code-dark]], true)
+try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\25colorscheme codedark\bcmd\bvim\0", "config", "vim-code-dark")
+time([[Config for vim-code-dark]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
