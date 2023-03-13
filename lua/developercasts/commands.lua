@@ -17,17 +17,17 @@ vim.api.nvim_command([[
 ]])
 vim.api.nvim_command([[
     augroup ChangeTabLineColour
-        autocmd colorscheme * :hi TabLine guibg=#1d1d1d guifg=#605958
+        autocmd colorscheme * :hi TabLine guibg=#181818 guifg=#605958
     augroup END
 ]])
 vim.api.nvim_command([[
     augroup ChangeTabLineFillColour
-        autocmd colorscheme * :hi TabLineFill guibg=#1d1d1d guifg=#605958
+        autocmd colorscheme * :hi TabLineFill guibg=#181818 guifg=#605958
     augroup END
 ]])
 vim.api.nvim_command([[
     augroup ChangeTabLineSelColour
-        autocmd colorscheme * :hi TabLineSel guibg=none guifg=white
+        autocmd colorscheme * :hi TabLineSel guibg=#1e1e1e guifg=white
     augroup END
 ]])
 vim.api.nvim_command([[

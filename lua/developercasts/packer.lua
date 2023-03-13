@@ -8,19 +8,23 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- Colorscheme
+  use('vv9k/vim-github-dark')
+
   use({
     'tomasiser/vim-code-dark',
     config = function()
-      vim.cmd('colorscheme codedark')
+      -- vim.cmd('colorscheme codedark')
     end
   })
 
-  -- use ({
-  --   'nanotech/jellybeans.vim',
-  --   config = function()
-  --     vim.cmd('colorscheme jellybeans')
-  --   end
-  -- })
+  use({
+    'rose-pine/neovim',
+    as = 'rose-pine',
+    config = function()
+      require("rose-pine").setup()
+      --vim.cmd('colorscheme rose-pine')
+    end
+  })
 
   -- Fuzzy Finder
   use {
@@ -97,24 +101,42 @@ use {
   use 'github/copilot.vim'
 end)
 
---[[
-use 'cocopon/iceberg.vim'
-use('nanotech/jellybeans.vim')
-use 'folke/tokyonight.nvim'
-use({
-  'rose-pine/neovim',
-  as = 'rose-pine',
-  config = function()
-    require("rose-pine").setup()
-    vim.cmd('colorscheme rose-pine')
-  end
-})
-use({
-  'cocopon/iceberg.vim',
-  as = 'iceberg',
-  config = function()
-    --require("iceberg").setup()
-    vim.cmd('colorscheme iceberg')
-  end
-})
---]]
+
+
+  -- use({
+  --   'rose-pine/neovim',
+  --   as = 'rose-pine',
+  --   config = function()
+  --     require("rose-pine").setup()
+  --     vim.cmd('colorscheme rose-pine')
+  --   end
+  -- })
+  --
+  -- use({
+  --   'folke/tokyonight.nvim',
+  --   config = function()
+  --     vim.cmd('colorscheme tokyonight')
+  --     require("tokyonight").setup({
+  --       -- use the night style
+  --       -- style = "night",
+  --       -- disable italic for functions
+  --       -- styles = {
+  --       --   functions = {}
+  --       -- },
+  --       -- sidebars = { "qf", "vista_kind", "terminal", "packer" },
+  --
+  --       -- change the background color to match terminal
+  --       on_colors = function(colors)
+  --         colors.bg = "#1d1d1d"
+  --         colors.bg_dark = "#1d1d1d"
+  --       end,
+  --     })
+  --   end
+  -- })
+
+  -- use ({
+  --   'nanotech/jellybeans.vim',
+  --   config = function()
+  --     vim.cmd('colorscheme jellybeans')
+  --   end
+  -- })
